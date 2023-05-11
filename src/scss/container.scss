@@ -1,0 +1,19 @@
+.container {
+  width: 1180px;
+  height: 100%;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  @include breakpoint($laptop-bp) {
+    width: 960px;
+  }
+  @include breakpoint($tablet-bp) {
+    width: 740px;
+  }
+  @include breakpoint($tablet-mini-bp) {
+    width: 100%;
+  }
+}

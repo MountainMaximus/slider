@@ -1,0 +1,14 @@
+$laptop-bp: 1280px;
+$tablet-bp: 991px;
+$tablet-mini-bp: 768px;
+$mobile-bp: 565px;
+$primary: #527ccd;
+$secondary: #c8d9fb;
+
+$background: #b4abab;
+
+@mixin breakpoint($bp) {
+  @media screen and (max-width: $bp) {
+    @content;
+  }
+}
